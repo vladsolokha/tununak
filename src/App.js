@@ -1,4 +1,5 @@
 import logo from './assets/logo.jpeg'
+import pdf from './assets/8547 Basement Finish.pdf'
 import './App.css';
 
 function App() {
@@ -10,9 +11,8 @@ function App() {
         <h2>Native Village</h2>
         <a
           className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+          href={pdf}
+          download
         >
           Download PDF Application 
         </a>
