@@ -9,14 +9,22 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <h1>Tununak</h1>
         <h2>Native Village</h2>
+      </header>
+
+      <main>
         <a
           className="App-link"
           href={pdf}
           download
         >
-          Download PDF Application 
+          Download Application pdf
         </a>
-      </header>
+      </main>
+      
+      <footer>
+        copyright &copy; 2022
+      </footer>
+
     </div>
   );
 }
