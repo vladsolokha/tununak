@@ -1,17 +1,22 @@
 .App {
 	text-align: center;
-}
-.App-header {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	min-height: 100vh;
+	row-gap: 20px;
+}
+.App-header {
 	background-image: url("./assets/main-bg.jpg");
+	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
-	max-width: 960px;
-	margin: auto;
-	background-color: transparent;
+}
+caption {
+	position: absolute;
+	font-size: x-small;
+	color: rgb(100 100 100);
+	top: 250px;
+	left: 20px;
 }
 a {
 	text-decoration: underline;
@@ -21,4 +26,7 @@ a:hover {
 	cursor: pointer;
 	text-decoration: dotted;
 	color: rgb(103	138	183	);
+}
+footer {
+	margin-top: auto;
 }

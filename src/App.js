@@ -1,5 +1,5 @@
-import logo from './assets/logo.jpeg'
-import pdf from './assets/8547 Basement Finish.pdf'
+import logo from './assets/logo.jpg'
+import pdf from './assets/Economic Assistance.pdf'
 import './App.css';
 
 function App() {
@@ -10,14 +10,17 @@ function App() {
         <h1>Tununak</h1>
         <h2>Native Village</h2>
       </header>
+      <caption>Photo credit: Eric Ellefson, 2010</caption>
 
       <main>
         <a
           className="App-link"
           href={pdf}
-          download
+          download={pdf}
+          target= "_blank"
+          rel='noreferrer'
         >
-          Download Application pdf
+          Download Economic Assistance Application
         </a>
       </main>
       
