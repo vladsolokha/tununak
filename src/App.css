@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Martel:wght@200;400;700;900&display=swap');
+
 .App {
+	font-family: 'Martel', serif;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -11,11 +14,16 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+h1 { 
+	font-family: 'Dancing Script', cursive;
+	font-size: 5em;
+	margin: 0;
+}
 caption {
 	position: absolute;
 	font-size: x-small;
 	color: rgb(100 100 100);
-	top: 250px;
+	top: 300px;
 	left: 20px;
 }
 a {
@@ -29,4 +37,5 @@ a:hover {
 }
 footer {
 	margin-top: auto;
+	font-size: small;
 }

@@ -1,6 +1,43 @@
+import { Routes, Route, Link } from 'react-router-dom'
 import logo from './assets/logo.jpg'
 import pdf from './assets/Economic Assistance.pdf'
 import './App.css';
+
+function Home() {
+  return (
+    <>
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="/board">Board Members</Link>
+        <Link to="/history">History</Link>
+      </nav>
+    </>
+  )
+}
+
+function Board() {
+  return (
+    <>
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="/board">Board Members</Link>
+        <Link to="/history">History</Link>
+      </nav>
+    </>
+  )
+}
+
+function History() {
+  return (
+    <>
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="/history">Board Members</Link>
+        <Link to="/history">History</Link>
+      </nav>
+    </>
+  )
+}
 
 function App() {
   return (
@@ -10,8 +47,15 @@ function App() {
         <h1>Tununak</h1>
         <h2>Native Village</h2>
       </header>
-      <caption>Photo credit: Eric Ellefson, 2010</caption>
+      <caption>Eric Ellefson, 2010</caption>
 
+      <navbar className="navbar">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="board" element={<Board />} />
+          <Route path="history" element={<History />} />
+        </Routes>
+      </navbar>
       <main>
         <a
           className="App-link"
