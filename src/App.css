@@ -26,6 +26,12 @@ caption {
 	top: 300px;
 	left: 20px;
 }
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	column-gap: 20px;
+}
 a {
 	text-decoration: underline;
 	color: rgb(158	195	243	);

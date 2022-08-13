@@ -11,6 +11,17 @@ function Home() {
         <Link to="/board">Board Members</Link>
         <Link to="/history">History</Link>
       </nav>
+      <main>
+        <a
+          className="App-link"
+          href={pdf}
+          download={pdf}
+          target= "_blank"
+          rel='noreferrer'
+        >
+          Download Economic Assistance Application
+        </a>
+      </main>
     </>
   )
 }
@@ -23,6 +34,9 @@ function Board() {
         <Link to="/board">Board Members</Link>
         <Link to="/history">History</Link>
       </nav>
+      <main>
+        <p>Our Board Members</p>
+      </main>
     </>
   )
 }
@@ -32,9 +46,12 @@ function History() {
     <>
       <nav>
         <Link to="/">Home</Link>
-        <Link to="/history">Board Members</Link>
+        <Link to="/board">Board Members</Link>
         <Link to="/history">History</Link>
       </nav>
+      <main>
+        <p>Our History</p>
+      </main>
     </>
   )
 }
@@ -56,16 +73,8 @@ function App() {
           <Route path="history" element={<History />} />
         </Routes>
       </navbar>
+
       <main>
-        <a
-          className="App-link"
-          href={pdf}
-          download={pdf}
-          target= "_blank"
-          rel='noreferrer'
-        >
-          Download Economic Assistance Application
-        </a>
       </main>
       
       <footer>
