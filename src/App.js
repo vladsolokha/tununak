@@ -21,6 +21,9 @@ function Home() {
           <img src={map} alt='location of Tununak in Alaska' />
         </div>
         <div className='App-link-container'>
+          <p>
+            Economic Assistance Application
+          </p>
           <a
             className="App-link"
             href={pdf}
@@ -28,8 +31,15 @@ function Home() {
             title='Download pdf of Economic Assistance Application'
             target= "_blank"
             rel='noreferrer'
-          >
-            Download Economic Assistance Application
+          >Download
+          </a><br/>
+          <a
+            className="App-link"
+            href={pdf}
+            title='View the Economic Assistance Application'
+            target= "_blank"
+            rel='noreferrer'
+          >View
           </a>
         </div>
       </main>
