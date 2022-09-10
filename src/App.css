@@ -41,7 +41,27 @@ a:hover {
 	text-decoration: dotted;
 	color: rgb(103	138	183	);
 }
+.history-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	column-gap: 3em;
+}
+.home-img-container img {
+	margin: 50px;
+	width: 300px;
+	border: 2px black solid;
+}
+.info-image-container img, .map-image-container img {
+	border: 2px black solid;
+}
 footer {
 	margin-top: auto;
 	font-size: small;
+}
+@media only screen and (max-width: 400px) {
+	.home-img-container img {
+		margin: 40px 0px 40px 0px;
+	}
 }
