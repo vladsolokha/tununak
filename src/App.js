@@ -8,14 +8,19 @@ import mapIcon from './assets/tununak-community-map-icon.jpeg'
 import mapFull from './assets/tununak-community-map-full.jpg'
 import './App.css';
 
+function Navigation() {
+    return (
+      <nav>
+        <Link to="/" classname='home-button'>Home</Link>
+        <Link to="/board" className='board-button'>Board</Link>
+        <Link to="/history" className='histor-button'>History</Link>
+      </nav>
+    )
+}
 function Home() {
   return (
     <>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/board">Board</Link>
-        <Link to="/history">History</Link>
-      </nav>
+      <Navigation />
       <main className='home-main'>
         <div className='home-img-container'>
           <img src={map} alt='location of Tununak in Alaska' />
@@ -50,13 +55,9 @@ function Home() {
 function Board() {
   return (
     <>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/board">Board</Link>
-        <Link to="/history">History</Link>
-      </nav>
+      <Navigation />
       <main>
-        <h2>Our Board</h2>
+        <h3>Our Board</h3>
         <p>This page is under construction</p>
         <p>Check back again</p>
       </main>
@@ -67,13 +68,9 @@ function Board() {
 function History() {
   return (
     <>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/board">Board</Link>
-        <Link to="/history">History</Link>
-      </nav>
+      <Navigation />
       <main>
-        <h2>Our History</h2>
+        <h3>Our History</h3>
         <div className='history-container'>
           <div className='info-image-container'>
             <p>Information</p>

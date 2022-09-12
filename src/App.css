@@ -18,8 +18,20 @@
 }
 h1 { 
 	font-family: 'Dancing Script', cursive;
-	font-size: 48px;
+	font-size: 72px;
 	margin: 0;
+}
+h2 {
+	font-size: 24px;
+}
+h3 {
+	font-size: 16px;
+}
+p {
+	font-size: 14px;
+}
+Link {
+	text-decoration: none;
 }
 caption {
 	position: absolute;
