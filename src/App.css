@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Martel:wght@200;400;700;900&display=swap');
 
+.root {
+}
 .App {
 	font-family: 'Martel', serif;
 	text-align: center;
@@ -16,7 +18,7 @@
 }
 h1 { 
 	font-family: 'Dancing Script', cursive;
-	font-size: 5em;
+	font-size: 48px;
 	margin: 0;
 }
 caption {
