@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Martel:wght@200;400;700;900&display=swap');
 
-.root {
-}
 .App {
 	font-family: 'Martel', serif;
 	text-align: center;
@@ -9,12 +7,30 @@
 	flex-direction: column;
 	justify-content: center;
 	min-height: 100vh;
-	row-gap: 20px;
+	row-gap: 35px;
+	/* https://www.joshwcomeau.com/gradient-generator?colors=191c22|1e2b4c|264e71&angle=15&colorMode=hsl&precision=8&easingCurve=0.329153605015674|0.8717182601880877|0.75|0.25 */
+	background-image: linear-gradient(
+  15deg,
+  hsl(220deg 15% 12%) 0%,
+  hsl(219deg 21% 13%) 17%,
+  hsl(222deg 26% 15%) 29%,
+  hsl(223deg 32% 17%) 39%,
+  hsl(222deg 38% 19%) 48%,
+  hsl(223deg 43% 21%) 57%,
+  hsl(220deg 44% 23%) 65%,
+  hsl(218deg 45% 24%) 74%,
+  hsl(214deg 47% 26%) 82%,
+  hsl(211deg 48% 28%) 91%,
+  hsl(208deg 50% 30%) 100%
+);
 }
 .App-header {
 	background-image: url("./assets/main-bg.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+main {
+	margin-top: 40px;
 }
 h1 { 
 	font-family: 'Dancing Script', cursive;
@@ -26,6 +42,11 @@ h2 {
 }
 h3 {
 	font-size: 16px;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	padding: 15px;
+	margin-left: 15%;
+	margin-right: 15%;
 }
 p {
 	font-size: 14px;
@@ -44,15 +65,22 @@ nav {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	column-gap: 20px;
+	column-gap: 35px;
+}
+.nav-button {
+	border: 1px solid rgb(158	195	243	);
+	padding: 5px 15px;
+}
+.nav-button:hover {
+	border: 1px solid rgb(103 138 183);
 }
 a {
-	text-decoration: underline;
+	text-decoration: none;
 	color: rgb(158	195	243	);
 }
 a:hover {
 	cursor: pointer;
-	text-decoration: dotted;
+	text-decoration: underline;
 	color: rgb(103	138	183	);
 }
 .history-container {
@@ -63,7 +91,6 @@ a:hover {
 	column-gap: 3em;
 }
 .home-img-container img {
-	margin: 50px;
 	width: 300px;
 	border: 2px black solid;
 }

@@ -11,9 +11,9 @@ import './App.css';
 function Navigation() {
     return (
       <nav>
-        <Link to="/" classname='home-button'>Home</Link>
-        <Link to="/board" className='board-button'>Board</Link>
-        <Link to="/history" className='histor-button'>History</Link>
+        <Link to="/" className='nav-button'>Home</Link>
+        <Link to="/board" className='nav-button'>Board</Link>
+        <Link to="/history" className='nav-button'>History</Link>
       </nav>
     )
 }
@@ -21,14 +21,14 @@ function Home() {
   return (
     <>
       <Navigation />
-      <main className='home-main'>
+      <main>
         <div className='home-img-container'>
           <img src={map} alt='location of Tununak in Alaska' />
         </div>
         <div className='App-link-container'>
-          <p>
+          <h3>
             Economic Assistance Application
-          </p>
+          </h3>
           <a
             className="App-link"
             href={pdf}
