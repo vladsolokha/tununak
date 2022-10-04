@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Martel:wght@200;400;700;900&display=swap');
 
+:root {
+	--close-shadow: 0 5px 15px rgba(0,0,0,.2);
+	--far-shadow: 0 15px 35px rgba(0,0,0,.2);
+}
+
 .App {
 	font-family: 'Martel', serif;
 	text-align: center;
@@ -8,21 +13,10 @@
 	justify-content: center;
 	min-height: 100vh;
 	row-gap: 35px;
-	/* https://www.joshwcomeau.com/gradient-generator?colors=191c22|1e2b4c|264e71&angle=15&colorMode=hsl&precision=8&easingCurve=0.329153605015674|0.8717182601880877|0.75|0.25 */
-	background-image: linear-gradient(
-  15deg,
-  hsl(220deg 15% 12%) 0%,
-  hsl(219deg 21% 13%) 17%,
-  hsl(222deg 26% 15%) 29%,
-  hsl(223deg 32% 17%) 39%,
-  hsl(222deg 38% 19%) 48%,
-  hsl(223deg 43% 21%) 57%,
-  hsl(220deg 44% 23%) 65%,
-  hsl(218deg 45% 24%) 74%,
-  hsl(214deg 47% 26%) 82%,
-  hsl(211deg 48% 28%) 91%,
-  hsl(208deg 50% 30%) 100%
-);
+	background: linear-gradient(
+		rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+		center / cover no-repeat url("./assets/body-bg.jpg");
+
 }
 .App-header {
 	background-image: url("./assets/main-bg.jpg");
@@ -42,11 +36,10 @@ h2 {
 }
 h3 {
 	font-size: 16px;
-	border-top: 1px solid white;
-	border-bottom: 1px solid white;
+	border-top: 2px solid hsla(230, 35%, 55%, 0.7);
 	padding: 15px;
-	margin-left: 15%;
-	margin-right: 15%;
+	margin-left: 20vw;
+	margin-right: 20vw;
 }
 p {
 	font-size: 14px;
@@ -69,10 +62,12 @@ nav {
 }
 .nav-button {
 	border: 1px solid rgb(158	195	243	);
+	box-shadow: var(--close-shadow);
 	padding: 5px 15px;
 }
 .nav-button:hover {
 	border: 1px solid rgb(103 138 183);
+	box-shadow: var(--far-shadow);
 }
 a {
 	text-decoration: none;
@@ -92,10 +87,12 @@ a:hover {
 }
 .home-img-container img {
 	width: 300px;
-	border: 2px black solid;
+	box-shadow: var(--far-shadow);
+	border: 1px hsla(230, 35%, 25%, 0.7) solid;
 }
 .info-image-container img, .map-image-container img {
-	border: 2px black solid;
+	border: 1px black solid;
+	box-shadow: var(--far-shadow);
 }
 footer {
 	margin-top: auto;
