@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Martel:wght@200;400;700;900&display=swap');
 
+:root {
+	--close-shadow: 0 5px 15px rgba(0,0,0,.2);
+	--far-shadow: 0 15px 35px rgba(0,0,0,.2);
+}
+
 .App {
 	font-family: 'Martel', serif;
 	text-align: center;
@@ -7,17 +12,40 @@
 	flex-direction: column;
 	justify-content: center;
 	min-height: 100vh;
-	row-gap: 20px;
+	row-gap: 35px;
+	background: linear-gradient(
+		rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+		center / cover no-repeat url("./assets/body-bg.jpg");
+
 }
 .App-header {
 	background-image: url("./assets/main-bg.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+main {
+	margin-top: 40px;
+}
 h1 { 
 	font-family: 'Dancing Script', cursive;
-	font-size: 5em;
+	font-size: 72px;
 	margin: 0;
+}
+h2 {
+	font-size: 24px;
+}
+h3 {
+	font-size: 16px;
+	border-top: 2px solid hsla(230, 35%, 55%, 0.7);
+	padding: 15px;
+	margin-left: 20vw;
+	margin-right: 20vw;
+}
+p {
+	font-size: 14px;
+}
+Link {
+	text-decoration: none;
 }
 caption {
 	position: absolute;
@@ -30,15 +58,24 @@ nav {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	column-gap: 20px;
+	column-gap: 35px;
+}
+.nav-button {
+	border: 1px solid rgb(158	195	243	);
+	box-shadow: var(--close-shadow);
+	padding: 5px 15px;
+}
+.nav-button:hover {
+	border: 1px solid rgb(103 138 183);
+	box-shadow: var(--far-shadow);
 }
 a {
-	text-decoration: underline;
+	text-decoration: none;
 	color: rgb(158	195	243	);
 }
 a:hover {
 	cursor: pointer;
-	text-decoration: dotted;
+	text-decoration: underline;
 	color: rgb(103	138	183	);
 }
 .history-container {
@@ -49,12 +86,13 @@ a:hover {
 	column-gap: 3em;
 }
 .home-img-container img {
-	margin: 50px;
 	width: 300px;
-	border: 2px black solid;
+	box-shadow: var(--far-shadow);
+	border: 1px hsla(230, 35%, 25%, 0.7) solid;
 }
 .info-image-container img, .map-image-container img {
-	border: 2px black solid;
+	border: 1px black solid;
+	box-shadow: var(--far-shadow);
 }
 footer {
 	margin-top: auto;
